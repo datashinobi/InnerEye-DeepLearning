@@ -1,0 +1,11 @@
+variables:
+  tenant_id: '72f988bf-86f1-41af-91ab-2d7cd011db47'
+  subscription_id: 'fe375bc2-9f1a-4909-ad0d-9319806d5e97'
+  application_id: '5205a813-b15e-4427-98ad-0b898b4a746d'
+  azureml_datastore: 'ie_ds'
+  resource_group: 'adb_rg'
+  docker_shm_size: '440g'
+  workspace_name: 'repro'
+  cluster: 'innereyerepro2'
+  model_configs_namespace: 'InnerEyeLocalLung.ML.configs'
+  extra_code_directory: 'InnerEyeLocalLung'
