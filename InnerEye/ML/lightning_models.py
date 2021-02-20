@@ -79,6 +79,13 @@ class SegmentationLightning(InnerEyeLightning):
         # labels_center_crop is the relevant part of the labels tensor that the model will actually produce.
         labels = cropped_sample.labels_center_crop
 
+        # fix here 
+        # print("pre fix",labels.size())
+        # result_dtype = torch.float16 
+        # labels = image_util.segmentation_to_one_hot(labels, use_gpu=True, result_dtype=result_dtype)
+        # print("postfix", labels.size())
+        #end fix here 
+
         mask = cropped_sample.mask_center_crop if is_training else None
         if is_training:
             logits = self.model(cropped_sample.image)
